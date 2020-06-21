@@ -50,7 +50,7 @@ app.get("/study-tracker", function(req, res) {
 
 //to receive new to do lists from list.ejs
 
-app.post("/", function (req, res) {
+app.post("/study-tracker", function (req, res) {
   const item = req.body.nextItem;
 
   if (req.body.list === "Work") {
