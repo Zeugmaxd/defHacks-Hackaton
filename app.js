@@ -7,7 +7,7 @@ const date = require(__dirname +"/date.js");  //requiring a local js
 // console.log(date());
 
 const app = express();
-const items = ["Be Happy","Add a new item below"];
+const items = ["Add a new item below. Strike out."];
 const workItems = [];
 
 app.set('view engine', 'ejs'); //view engine looks for files to render: views folder
@@ -58,7 +58,7 @@ app.post("/study-tracker", function (req, res) {
     res.redirect("/work");
   } else {
     items.push(item);
-    res.redirect("/");
+    res.redirect("/study-tracker");
   }
 
   //"Study now" received from the form
@@ -70,11 +70,11 @@ app.post("/study-tracker", function (req, res) {
 });
 
                               /*
-                              *Work Page ROUTE
+                              *Task List ROUTE
                               */
 
 app.get("/work", function(req, res) {
-  res.render("list", {listTitle: "Work List", newItems: workItems});
+  res.render("list", {listTitle: "Task List", newItems: workItems});
 });
 
 app.post("/work", function(req, res) {
@@ -83,8 +83,12 @@ app.post("/work", function(req, res) {
   res.redirect("/work");
 });
 
-app.get("/about", function(req, res) {
-  res.render("about");
+                              /*
+                              *Timer ROUTE
+                              */
+
+app.get("/timer", function(req, res) {
+  res.render("timer", {listTitle: "Timer"});
 });
 
 app.listen(8000, function() {

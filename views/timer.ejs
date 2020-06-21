@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>TO DO LIST</title>
+  <link rel="stylesheet" href="css/timer.css">
+</head>
+
+<body>
+
+<div class="box" id="heading">
+  <h1 style="color: black">Timer</h1>
+</div>
+
+<div id="pomodoro-app">
+  <div id="container">
+    <div id="timer">
+      <div id="time">
+        <span id="minutes">30</span>
+        <span id="colon">:</span>
+        <span id="seconds">00</span>
+      </div>
+      <div id="filler"></div>
+    </div>
+
+    <div id="buttons">
+      <button id="work">Work</button>
+      <button id="shortBreak">Short Break</button>
+      <button id="longBreak">Long Break</button>
+      <button id="stop">Stop</button>
+    </div>
+  </div>
+</div>
+
+<script src="functionality.js" charset="utf-8"></script>
+
+<%- include("footer") -%>
