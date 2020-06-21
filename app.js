@@ -7,7 +7,7 @@ const date = require(__dirname +"/date.js");  //requiring a local js
 // console.log(date());
 
 const app = express();
-const items = ["Add a new item below. Strike out."];
+const items = ["Add a new item. Strike out."];
 const workItems = [];
 
 app.set('view engine', 'ejs'); //view engine looks for files to render: views folder
