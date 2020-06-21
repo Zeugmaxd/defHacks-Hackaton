@@ -1,0 +1,24 @@
+{
+  "name": "defhacks",
+  "version": "1.0.0",
+  "description": "Thunder Tracker is a web app that keeps motivated students, motivated. It allows them to set timers, make to-do lists, and plan their day with only a click of a button.\r No sign up is required, and feel free to use for non-educational planning.",
+  "main": "app.js",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Zeugmaxd/defHacks-Hackaton.git"
+  },
+  "author": "Ayanfe-Oluwa Idowu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Zeugmaxd/defHacks-Hackaton/issues"
+  },
+  "homepage": "https://github.com/Zeugmaxd/defHacks-Hackaton#readme"
+}
