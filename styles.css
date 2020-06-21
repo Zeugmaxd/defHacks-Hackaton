@@ -1,0 +1,58 @@
+body {
+  text-align: center;
+  font-family: 'EB Garamond', serif;
+  height: 100%;
+  color: #fff;
+  text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
+  box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
+  background-image: linear-gradient(to bottom right, #472b62 , #e25822);
+  }
+
+
+.main-title {
+  padding-top: 13rem;
+  font-size: 5rem;
+  color: #00000;
+  font-family: 'Lora', serif;
+}
+
+.buttons {
+  padding: 5% 10%;
+  margin-top: 2rem;
+}
+
+.download-button {
+  margin: 5% 3% 5% 0;
+  width: 30%;
+  display: inline;
+}
+
+.bord {
+  margin-left: 3rem;
+}
+
+/* Custom default button */
+.btn-secondary,
+.btn-secondary:hover,
+.btn-secondary:focus {
+  color: #333;
+  text-shadow: none; /* Prevent inheritance from `body` */
+  background-color: #fff;
+  border: .05rem solid #fff;
+}
+
+.cover-container {
+  max-width: 42em;
+}
+
+/*
+ * Cover
+ */
+.cover {
+  padding: 0 1.5rem;
+}
+
+.cover .btn-lg {
+  padding: .75rem 1.25rem;
+  font-weight: 700;
+}
