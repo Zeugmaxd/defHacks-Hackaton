@@ -19,11 +19,15 @@
     <% } %>
     <form class="item" action="/study-tracker" method="post">
       <input type="text" name="nextItem" placeholder="New Item" autocomplete="off">
-      <button type="submit" name="list" value=<%= listTitle %>>+</button>
+      <button class="add" type="submit" name="list" value=<%= listTitle %>>+</button>
 
       <!-- The ejs holder changes the value to something dynamic -->
       <!-- the button triggers a post request -->
     </form>
+  </div>
+
+  <div class="cover row buttons">
+    <a href="./"><button role="button" class="custom-button cover btn-lg" type="button" type="submit" action="./timer" name="timer">Back to Homepage<i class="fas fa-clock fa-lg"></i>  </button></a>
   </div>
 
 <%- include("footer") -%>

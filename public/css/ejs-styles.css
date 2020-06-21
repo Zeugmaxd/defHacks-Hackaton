@@ -96,3 +96,23 @@ footer {
   color: rgba(0, 0, 0, 0.5);
   text-align: center;
 }
+
+/*
+* For the buttons
+*/
+
+.custom-button {
+  margin: 5% 3% 5% 0;
+  width: 30%;
+  display: inline;
+}
+
+.cover {
+  padding: 0 1.5rem;
+  margin-right: auto;
+}
+
+.cover .btn-lg {
+  padding: .75rem 1.25rem;
+  font-weight: 700;
+}

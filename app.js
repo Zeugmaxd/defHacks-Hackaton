@@ -53,7 +53,7 @@ app.get("/study-tracker", function(req, res) {
 app.post("/study-tracker", function (req, res) {
   const item = req.body.nextItem;
 
-  if (req.body.list === "Work") {
+  if (req.body.list === "Task") {
     workItems.push(item);
     res.redirect("/work");
   } else {
@@ -70,7 +70,7 @@ app.post("/study-tracker", function (req, res) {
 });
 
                               /*
-                              *Task List ROUTE
+                  f            *Task List ROUTE
                               */
 
 app.get("/work", function(req, res) {
